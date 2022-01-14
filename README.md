@@ -20,7 +20,7 @@ _✨ 天天疯狂 ✨_
   </a>
   
   <a href="">
-    <img src="https://img.shields.io/badge/release-v0.1.2-orange">
+    <img src="https://img.shields.io/badge/release-v0.1.3-orange">
   </a>
   
 </p>
@@ -28,7 +28,7 @@ _✨ 天天疯狂 ✨_
 
 ## 版本
 
-v0.1.2
+v0.1.3
 
 ## 安装
 
@@ -42,7 +42,7 @@ v0.1.2
 
 ## 命令
 
-1. [疯狂/狂乱]星期[一|二|三|四|五|六|日]；
+1. 疯狂星期[一|二|三|四|五|六|日]；
 2. 输入**疯狂星期八**等不合法时间将提示；
 
 ## 本插件改自HoshinoBot疯狂星期四插件

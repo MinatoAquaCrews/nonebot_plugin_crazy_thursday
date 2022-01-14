@@ -11,7 +11,7 @@ from nonebot.adapters.cqhttp import Bot, GroupMessageEvent, GROUP
 _CRAZY_PATH = nonebot.get_driver().config.crazy_path
 CRAZY_PATH = os.path.join(os.path.dirname(__file__), "resource") if not _CRAZY_PATH else _CRAZY_PATH
 # crazy = on_command('疯狂星期四', aliases={"星期四", "KFC", "V我50"}, permission=GROUP, priority=15, block=True)
-crazy = on_regex(r'[疯狂|狂乱]星期.', permission=GROUP, priority=15, block=True)
+crazy = on_regex(r'疯狂星期.', permission=GROUP, priority=15, block=True)
 
 @crazy.handle()
 async def random_post(bot: Bot, event: GroupMessageEvent, state: T_State):
