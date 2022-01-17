@@ -20,7 +20,7 @@ _✨ 天天疯狂 ✨_
   </a>
   
   <a href="">
-    <img src="https://img.shields.io/badge/release-v0.1.3-orange">
+    <img src="https://img.shields.io/badge/release-v0.1.4-orange">
   </a>
   
 </p>
@@ -28,7 +28,7 @@ _✨ 天天疯狂 ✨_
 
 ## 版本
 
-v0.1.3
+v0.1.4
 
 ## 安装
 

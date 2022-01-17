@@ -1,4 +1,5 @@
 from nonebot.typing import T_State
+from nonebot.params import State
 import random
 import json
 import os
@@ -6,7 +7,7 @@ import re
 import nonebot
 from nonebot import logger
 from nonebot import on_command, on_regex
-from nonebot.adapters.cqhttp import Bot, GroupMessageEvent, GROUP
+from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent, GROUP
 
 _CRAZY_PATH = nonebot.get_driver().config.crazy_path
 CRAZY_PATH = os.path.join(os.path.dirname(__file__), "resource") if not _CRAZY_PATH else _CRAZY_PATH
@@ -14,7 +15,7 @@ CRAZY_PATH = os.path.join(os.path.dirname(__file__), "resource") if not _CRAZY_P
 crazy = on_regex(r'疯狂星期.', permission=GROUP, priority=15, block=True)
 
 @crazy.handle()
-async def random_post(bot: Bot, event: GroupMessageEvent, state: T_State):
+async def random_post(bot: Bot, event: GroupMessageEvent, state: T_State = State()):
     iscrazy = re.search(r'(.*?)星期[一|二|三|四|五|六|日]', event.get_plaintext())
     crazy_day = iscrazy.group(0)[-3:] if iscrazy is not None else None
     if crazy_day is None:
