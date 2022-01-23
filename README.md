@@ -4,7 +4,7 @@
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable-next-line MD036 -->
-_✨ 天天疯狂 ✨_
+_🍗 天天疯狂 🍗_
 <!-- prettier-ignore-end -->
 
 </div>
@@ -16,11 +16,11 @@ _✨ 天天疯狂 ✨_
   </a>
   
   <a href="https://github.com/nonebot/nonebot2">
-    <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.1-green">
+    <img src="https://img.shields.io/badge/nonebot2-2.0.0alpha.16-green">
   </a>
   
   <a href="">
-    <img src="https://img.shields.io/badge/release-v0.1.4-orange">
+    <img src="https://img.shields.io/badge/release-v0.1.5-orange">
   </a>
   
 </p>
@@ -28,11 +28,13 @@ _✨ 天天疯狂 ✨_
 
 ## 版本
 
-v0.1.4
+v0.1.5
+
+⚠ 适配nonebot2-2.0.0alpha.16，适配beta.1版本将会放在dev分支。
 
 ## 安装
 
-1. 通过`pip`或`poetry`安装；
+1. 通过`pip`或`nb`安装；
 
 2. 读取文案的默认路径位于`./resource`下；
 
@@ -42,7 +44,7 @@ v0.1.4
 
 ## 命令
 
-1. 疯狂星期[一|二|三|四|五|六|日]；
+1. 天天疯狂，疯狂星期[一|二|三|四|五|六|日]；
 2. 输入**疯狂星期八**等不合法时间将提示；
 
 ## 本插件改自HoshinoBot疯狂星期四插件
