@@ -30,7 +30,7 @@ _🍗 天天疯狂 🍗_
 
 v0.1.6
 
-⚠ 适配nonebot2-2.0.0alpha.16；适配beta.1版本参见beta.1分支
+⚠ 适配nonebot2-2.0.0alpha.16；适配beta.1版本参见[beta.1分支](https://github.com/KafCoppelia/nonebot_plugin_crazy_thursday/tree/beta.1)
 
 ## 安装
 
