@@ -16,7 +16,7 @@ if not hasattr(global_config, 'crazy_path'):
 else:
     CRAZY_PATH = global_config.crazy_path
 
-__crazy_vsrsion__ = 'v0.2.1'
+__crazy_vsrsion__ = 'v0.2.2'
 plugin_notes = f'''
 KFC疯狂星期四 {__crazy_vsrsion__}
 [疯狂星期X] 随机输出KFC疯狂星期四文案
