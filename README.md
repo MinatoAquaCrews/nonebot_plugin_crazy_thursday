@@ -12,29 +12,34 @@ _🍗 天天疯狂 🍗_
 <p align="center">
   
   <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-informational">
+    <img src="https://img.shields.io/github/license/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=blue">
   </a>
   
   <a href="https://github.com/nonebot/nonebot2">
     <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2-green">
   </a>
   
-  <a href="">
-    <img src="https://img.shields.io/badge/release-v0.2.2-orange">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.3">
+    <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
+
+  <a href="https://www.codefactor.io/repository/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday">
+    <img src="https://img.shields.io/codefactor/grade/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta?color=red">
+  </a>
+  
   
 </p>
 </p>
 
 ## 版本
 
-v0.2.2
+v0.2.3
 
 ⚠ 适配nonebot2-2.0.0beta.2；
 
 👉 适配alpha.16版本参见[alpha.16分支](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/tree/alpha.16)
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.2)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.3)
 
 ## 安装
 
@@ -50,7 +55,7 @@ CRAZY_PATH="your-path-to-post.json"
 
 天天疯狂！随机输出KFC疯狂星期四文案。
 
-**重磅新增** 三十余条文案！~~更新假面骑士国配文案~~
+**新增** 三十余条文案！
 
 ## 命令
 
