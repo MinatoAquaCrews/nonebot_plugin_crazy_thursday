@@ -27,7 +27,6 @@ _🍗 天天疯狂 🍗_
     <img src="https://img.shields.io/codefactor/grade/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta?color=red">
   </a>
   
-  
 </p>
 </p>
 
@@ -63,6 +62,6 @@ CRAZY_PATH="your-path-to-post.json"
 
 2. 支持狂乱[月|火|水|木|金|土|日]曜日日文触发；
 
-## 本插件改自HoshinoBot疯狂星期四插件
+## 本插件改自
 
 [HoshinoBot-fucking_crazy_thursday](https://github.com/Nicr0n/fucking_crazy_thursday)
