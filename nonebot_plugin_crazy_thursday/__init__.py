@@ -16,8 +16,8 @@ KFC疯狂星期四 {__crazy_thursday_version__}
 [疯狂星期X] 随机输出KFC疯狂星期四文案
 [狂乱X曜日] 随机输出KFC疯狂星期四文案""".strip()
 
-crazy = on_regex(pattern=r"^疯狂星期\S$", priority=15)
-crazy_jp = on_regex(pattern=r"^狂乱\S曜日$", priority=15)
+crazy = on_regex(pattern=r"疯狂星期\S", priority=15)
+crazy_jp = on_regex(pattern=r"狂乱\S曜日", priority=15)
 
 def get_weekday_cn(arg: str = RegexMatched(), state: T_State = State()):
     weekday = arg[-1].replace("天", "日")
