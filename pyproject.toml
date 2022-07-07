@@ -5,6 +5,7 @@ description = "Send KFC crazy thursday articles randomly!"
 authors = ["KafCoppelia <k740677208@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "nonebot_plugin_crazy_thursday"}]
 
 [tool.poetry.dependencies]
 python = "^3.7.3"
