@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot_plugin_crazy_thursday"
-version = "0.2.4"
+version = "0.2.5"
 description = "Send KFC crazy thursday articles randomly!"
 authors = ["KafCoppelia <k740677208@gmail.com>"]
 license = "MIT"

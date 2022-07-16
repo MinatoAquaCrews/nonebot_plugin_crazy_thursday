@@ -19,7 +19,7 @@ _🍗 天天疯狂 🍗_
     <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2+-green">
   </a>
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.4">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.5">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
 
@@ -31,11 +31,11 @@ _🍗 天天疯狂 🍗_
 
 ## 版本
 
-v0.2.4
+v0.2.5
 
 ⚠ 适配nonebot2-2.0.0beta.2+
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.4)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.5)
 
 ## 安装
 
@@ -57,7 +57,7 @@ v0.2.4
 
 1. 天天疯狂，疯狂星期[一|二|三|四|五|六|日|天]，输入**疯狂星期八**等不合法时间将提示；
 
-2. 支持狂乱[月|火|水|木|金|土|日]曜日日文触发；
+2. 支持日文触发：狂乱[月|火|水|木|金|土|日]曜日；
 
 ## 本插件改自
 
