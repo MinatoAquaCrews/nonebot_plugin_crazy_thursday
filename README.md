@@ -4,7 +4,7 @@
 
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable-next-line MD036 -->
-_🍗 天天疯狂 🍗_
+_🍗 疯狂星期四 🍗_
 <!-- prettier-ignore-end -->
 
 </div>
@@ -16,10 +16,10 @@ _🍗 天天疯狂 🍗_
   </a>
   
   <a href="https://github.com/nonebot/nonebot2">
-    <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2+-green">
+    <img src="https://img.shields.io/badge/nonebot2-2.0.0rc1+-green">
   </a>
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.5">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6a1">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
 
@@ -31,11 +31,11 @@ _🍗 天天疯狂 🍗_
 
 ## 版本
 
-v0.2.5
+v0.2.6a1
 
-⚠ 适配nonebot2-2.0.0beta.2+
+⚠ 适配nonebot2-2.0.0rc1+
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.5)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6a1)
 
 ## 安装
 

@@ -1,7 +1,8 @@
-from nonebot import get_driver, logger
+from nonebot import get_driver
+from nonebot.log import logger
 from pydantic import BaseModel, Extra
-from pathlib import Path 
-from typing import Union
+from pathlib import Path
+from typing import Union, Dict, List
 import httpx
 try:
     import ujson as json
@@ -41,10 +42,7 @@ async def post_check() -> None:
         If failed and post dosen't exists, raise exception
         Otherwise just abort downloading
     '''
-    if not crazy_config.crazy_path.exists():
-        crazy_config.crazy_path.mkdir(parents=True, exist_ok=True)
-        
-    json_path = crazy_config.crazy_path / "post.json"
+    json_path: Path = crazy_config.crazy_path / "post.json"
             
     url = "https://raw.fastgit.org/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta/nonebot_plugin_crazy_thursday/post.json"
     response = await download_url(url)
@@ -53,7 +51,7 @@ async def post_check() -> None:
            logger.warning("Crazy Thursday resource missing! Please check!")
            raise ResourceError
     else:
-        docs = response.json()
+        docs: Dict[str, Union[float, List[str]]] = response.json()
         version = docs.get("version")
 
         with json_path.open("w", encoding="utf-8") as f:
