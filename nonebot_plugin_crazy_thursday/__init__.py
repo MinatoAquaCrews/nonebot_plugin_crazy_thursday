@@ -1,16 +1,17 @@
 import random
+from typing import Coroutine, Any
 from pathlib import Path
 from nonebot import on_regex
 from nonebot.typing import T_State
 from nonebot.matcher import Matcher
-from nonebot.params import Depends, State, RegexMatched
+from nonebot.params import Depends, RegexMatched
 from .config import crazy_config
 try:
     import ujson as json
 except ModuleNotFoundError:
     import json
 
-__crazy_thursday_version__ = "v0.2.5"
+__crazy_thursday_version__ = "v0.2.6a1"
 __crazy_thursday_notes__ = f"""
 KFC疯狂星期四 {__crazy_thursday_version__}
 [疯狂星期X] 随机输出KFC疯狂星期四文案
@@ -19,13 +20,17 @@ KFC疯狂星期四 {__crazy_thursday_version__}
 crazy = on_regex(pattern=r"^疯狂星期\S$", priority=15)
 crazy_jp = on_regex(pattern=r"^狂乱\S曜日$", priority=15)
 
-def get_weekday_cn(arg: str = RegexMatched(), state: T_State = State()):
-    weekday = arg[-1].replace("天", "日")
-    return {**state, "weekday": weekday}
+def get_weekday_cn() -> Coroutine[Any, Any, None]:
+    async def _get_weekday_cn(matcher: Matcher, arg: str = RegexMatched()) -> None:
+        matcher.set_arg("weekday", arg[-1].replace("天", "日"))
+    
+    return _get_weekday_cn
 
-def get_weekday_jp(arg: str = RegexMatched(), state: T_State = State()):
-    weekday = arg[2]
-    return {**state, "weekday": weekday}
+def get_weekday_jp() -> Coroutine[Any, Any, None]:
+    async def _get_weekday_jp(matcher: Matcher, arg: str = RegexMatched()) -> None:
+        matcher.set_arg("weekday", arg[2])
+    
+    return _get_weekday_jp
         
 @crazy.handle()
 async def _(matcher: Matcher, state: T_State = Depends(get_weekday_cn)):
