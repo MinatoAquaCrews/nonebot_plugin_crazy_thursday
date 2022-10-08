@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot_plugin_crazy_thursday"
-version = "0.2.6a1"
+version = "0.2.6rc1"
 description = "Send KFC crazy thursday articles randomly!"
 authors = ["KafCoppelia <k740677208@gmail.com>"]
 license = "MIT"
@@ -9,7 +9,7 @@ packages = [{include = "nonebot_plugin_crazy_thursday"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-nonebot2 = "^2.0.0rc1"
+nonebot2 = "^2.0.0b3"
 nonebot-adapter-onebot = "^2.1.1"
 httpx = "^0.23.0"
 
