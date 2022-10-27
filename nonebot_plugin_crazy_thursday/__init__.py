@@ -4,7 +4,7 @@ from nonebot.matcher import Matcher
 from nonebot.params import Depends, RegexMatched
 from .config import *
 
-__crazy_thursday_version__ = "v0.2.6"
+__crazy_thursday_version__ = "v0.2.7"
 __crazy_thursday_notes__ = f"""
 KFC疯狂星期四 {__crazy_thursday_version__}
 [疯狂星期X] 随机输出KFC疯狂星期四文案
