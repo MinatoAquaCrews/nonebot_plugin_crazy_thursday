@@ -28,7 +28,7 @@ async def download_url(url: str) -> Union[httpx.Response, None]:
                 response = await client.get(url)
                 if response.status_code != 200:
                     continue
-                return response
+                return response.json()
             except Exception as e:
                 logger.warning(f"Error occured when downloading {url}, {i+1}/3: {e}")
     
@@ -51,7 +51,7 @@ async def post_check() -> None:
            logger.warning("Crazy Thursday resource missing! Please check!")
            raise ResourceError
     else:
-        docs: Dict[str, Union[float, List[str]]] = response.json()
+        docs: Dict[str, Union[float, List[str]]] = response
         version = docs.get("version")
 
         with json_path.open("w", encoding="utf-8") as f:
