@@ -44,7 +44,7 @@ async def post_check() -> None:
     '''
     json_path: Path = crazy_config.crazy_path / "post.json"
             
-    url = "https://raw.fastgit.org/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta/nonebot_plugin_crazy_thursday/post.json"
+    url = "https://gh-proxy.com/https://raw.githubusercontent.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta/nonebot_plugin_crazy_thursday/post.json"
     response = await download_url(url)
     if response is None:
         if not json_path.exists():
