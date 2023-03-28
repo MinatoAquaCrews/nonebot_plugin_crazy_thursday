@@ -2,16 +2,13 @@
 
 # Crazy Thursday
 
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable-next-line MD036 -->
 _🍗 疯狂星期四 🍗_
-<!-- prettier-ignore-end -->
 
 </div>
 
 <p align="center">
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/blob/beta/LICENSE">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=blue">
   </a>
   
@@ -19,33 +16,40 @@ _🍗 疯狂星期四 🍗_
     <img src="https://img.shields.io/badge/nonebot2-2.0.0rc1+-green">
   </a>
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post1">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
 
   <a href="https://www.codefactor.io/repository/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday">
-    <img src="https://img.shields.io/codefactor/grade/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/beta?color=red">
+    <img src="https://img.shields.io/codefactor/grade/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/master?color=red">
+  </a>
+
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday">
+    <img src="https://img.shields.io/pypi/dm/nonebot_plugin_crazy_thursday">
+  </a>
+
+  <a href="https://results.pre-commit.ci/latest/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/master">
+	<img src="https://results.pre-commit.ci/badge/github/MinatoAquaCrews/nonebot_plugin_crazy_thursday/master.svg" alt="pre-commit.ci status">
   </a>
   
 </p>
 
 ## 版本
 
-v0.2.6
+[v0.2.6.post1](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post1)
 
 ⚠ 适配nonebot2-2.0.0rc1+
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6)
-
 ## 安装
 
-1. 通过`pip`或`nb`安装；
+1. 通过 `pip` 或 `nb` 安装；
 
-2. 读取文案的默认路径位于**插件同级目录**下；可在`.env`下设置：
+2. 文案的默认路径位于**插件同级目录**下；也可放置在别处，在 `.env` 下设置即可；`CRAZY_AUTO_UPDATE` 默认关闭，开启则插件将在启动时自动检查资源更新。例如：
 
-    ```python
-    CRAZY_PATH="your-path-to-post.json"   # For example: "./my_data/crazy_thursday"，在此文件夹下放置"post.json"
-    ```
+  ```python
+  CRAZY_PATH="your-path-to-post.json"
+  CRAZY_AUTO_UPDATE=false
+  ```
 
 ## 功能
 
