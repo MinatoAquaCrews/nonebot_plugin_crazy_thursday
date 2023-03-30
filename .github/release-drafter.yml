@@ -27,3 +27,10 @@ version-resolver:
     labels:
       - "patch"
   default: patch
+
+template: |
+  ## What’s Changed
+
+  $CHANGES
+
+  Changelog: [`$PREVIOUS_TAG...`](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/compare/$PREVIOUS_TAG...)

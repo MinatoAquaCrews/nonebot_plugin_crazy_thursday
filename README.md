@@ -16,7 +16,7 @@ _🍗 疯狂星期四 🍗_
     <img src="https://img.shields.io/badge/nonebot2-2.0.0rc1+-green">
   </a>
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post1">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post2">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
 
@@ -36,7 +36,7 @@ _🍗 疯狂星期四 🍗_
 
 ## 版本
 
-[v0.2.6.post1](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post1)
+[v0.2.6.post2](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.6.post2)
 
 ⚠ 适配nonebot2-2.0.0rc1+
 
