@@ -1,9 +1,11 @@
+from pathlib import Path
+from typing import Any, Dict, Union
+
+import httpx
 from nonebot import get_driver
 from nonebot.log import logger
 from pydantic import BaseModel, Extra
-from pathlib import Path
-from typing import Union, Dict, Any
-import httpx
+
 try:
     import ujson as json
 except ModuleNotFoundError:
