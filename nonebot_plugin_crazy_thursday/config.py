@@ -1,6 +1,5 @@
 from pathlib import Path
 from typing import Any, Dict, Union
-
 import httpx
 from nonebot import get_driver
 from nonebot.log import logger
@@ -42,8 +41,7 @@ async def download_url() -> Union[Dict[str, Any], None]:
                 return response.json()
 
             except Exception:
-                logger.warning(
-                    f"Error occured when downloading {url}, {i+1}/3")
+                logger.warning(f"Error occured when downloading {url}, {i+1}/3")
 
     logger.warning("Abort downloading")
     return None
@@ -51,11 +49,11 @@ async def download_url() -> Union[Dict[str, Any], None]:
 
 @driver.on_startup
 async def kfc_post_check() -> None:
-    '''
-        Get the latest version of post.json from repo if CRAZY_AUTO_UPDATE.
-        If failed and post dosen't exists, raise exception.
-        Otherwise just abort it.
-    '''
+    """
+    Get the latest version of post.json from repo if CRAZY_AUTO_UPDATE.
+    If failed and post dosen't exists, raise exception.
+    Otherwise just abort it.
+    """
     json_path: Path = crazy_config.crazy_path / "post.json"
 
     cur_version: float = 0
@@ -78,7 +76,8 @@ async def kfc_post_check() -> None:
             version: float = response.get("version", 0)
         except KeyError:
             logger.warning(
-                "KFC post text resource downloaded incompletely! Please check!")
+                "KFC post text resource downloaded incompletely! Please check!"
+            )
             raise DownloadError
 
         # Update when there is a newer version
@@ -86,5 +85,4 @@ async def kfc_post_check() -> None:
             with json_path.open("w", encoding="utf-8") as f:
                 json.dump(response, f, ensure_ascii=False, indent=4)
 
-            logger.info(
-                f"Updated post.json, version: {cur_version} -> {version}")
+            logger.info(f"Updated post.json, version: {cur_version} -> {version}")
