@@ -1,18 +1,20 @@
 [tool.poetry]
 name = "nonebot_plugin_crazy_thursday"
-version = "0.2.6.post2"
+version = "0.2.7"
 description = "Send KFC crazy thursday articles randomly!"
 authors = ["KafCoppelia <k740677208@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday"
+homepage = "https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday"
+documentation = "https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday#readme"
 keywords = ["nonebot2", "nonebot-plugin", "KFC crazy Thursday", "MinatoAquaCrews"]
 packages = [{include = "nonebot_plugin_crazy_thursday"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-nonebot2 = "^2.0.0b3"
-nonebot-adapter-onebot = "^2.1.1"
+python = "^3.9"
+nonebot2 = "^2.0.0rc4"
+nonebot-adapter-onebot = "^2.2.0"
 httpx = "^0.23.0"
 
 [build-system]
@@ -22,5 +24,4 @@ build-backend = "poetry.core.masonry.api"
 [[tool.poetry.source]]
 name = "tencentyun"
 url = "https://mirrors.tencent.com/pypi/simple"
-default = false
-secondary = false
+priority = "primary"
