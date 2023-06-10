@@ -1,9 +1,11 @@
 import random
 from typing import Annotated, List
+
 from nonebot import on_regex
 from nonebot.matcher import Matcher
 from nonebot.params import Depends, RegexStr
 from nonebot.plugin import PluginMetadata
+
 from .config import *
 
 __crazy_thursday_version__ = "v0.2.7"
