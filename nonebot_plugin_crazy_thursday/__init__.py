@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 import random
 from typing import Annotated, List
 
@@ -6,21 +8,21 @@ from nonebot.matcher import Matcher
 from nonebot.params import Depends, RegexStr
 from nonebot.plugin import PluginMetadata
 
-from .config import *
-
-__crazy_thursday_version__ = "v0.2.7"
-__crazy_thursday_usages__ = f"""
-KFC疯狂星期四 {__crazy_thursday_version__}
+__version__ = "v0.2.8a1"
+__usages__ = f"""
+KFC疯狂星期四 {__version__}
 [疯狂星期X] 随机输出KFC疯狂星期四文案
 [狂乱X曜日] 随机输出KFC疯狂星期四文案""".strip()
 
 __plugin_meta__ = PluginMetadata(
     name="疯狂星期四",
     description="持续疯狂！KFC疯狂星期四🍗",
-    usage=__crazy_thursday_usages__,
+    usage=__usages__,
+    type="application",
+    homepage="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday",
     extra={
         "author": "KafCoppelia <k740677208@gmail.com>",
-        "version": __crazy_thursday_version__,
+        "version": __version__,
     },
 )
 
@@ -75,14 +77,13 @@ def randomKFC(day: str) -> str:
         return "给个准确时间，OK?"
 
     # Get the weekday group index
-    idx: int = int(tb.index(day) / 3) * 3
-
-    # json数据存放路径
-    path: Path = crazy_config.crazy_path / "post.json"
+    idx = int(tb.index(day) / 3) * 3
 
     # 将json对象加载到数组
-    with open(path, "r", encoding="utf-8") as f:
-        kfc = json.load(f).get("post")
+    with open(Path(__file__).parent / "post.json", "r", encoding="utf-8") as f:
+        kfc = json.load(f).get("post", None)
+        if kfc is None:
+            raise KeyError("Key 'post' is missing.")
 
         # 随机选取数组中的一个对象，并替换日期
         return (
