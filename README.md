@@ -13,10 +13,10 @@ _🍗 疯狂星期四 🍗_
   </a>
 
   <a href="https://github.com/nonebot/nonebot2">
-    <img src="https://img.shields.io/badge/nonebot2-2.0.0rc4+-green">
+    <img src="https://img.shields.io/badge/nonebot2-2.0.0+-green">
   </a>
 
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.7">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.8a1">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_crazy_thursday?color=orange">
   </a>
 
@@ -36,26 +36,19 @@ _🍗 疯狂星期四 🍗_
 
 ## 版本
 
-[v0.2.7](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.7)
+[v0.2.8a1](https://github.com/MinatoAquaCrews/nonebot_plugin_crazy_thursday/releases/tag/v0.2.8a1)
 
-⚠ 适配nonebot2-2.0.0rc4+
+⚠ 适配nonebot2-2.0.0+
 
 ## 安装
 
-1. 通过 `pip` 或 `nb` 安装；
+1. 通过 `pip` 或 `nb-cli` 安装；
 
-2. 文案的默认路径位于**插件同级目录**下；也可放置在别处，在 `.env` 下设置即可；`CRAZY_AUTO_UPDATE` 默认关闭，开启则插件将在启动时自动检查资源更新。例如：
-
-```python
-CRAZY_PATH="your-path-to-post.json"
-CRAZY_AUTO_UPDATE=false
-```
+2. 文案资源默认位于**插件同级目录**下；
 
 ## 功能
 
 天天疯狂！随机输出KFC疯狂星期四文案。
-
-⚠ 每次启动插件会自动尝试从repo中下载最新的文案资源！
 
 ## 命令
 
